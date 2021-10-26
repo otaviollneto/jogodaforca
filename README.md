@@ -2,7 +2,7 @@
 
 Criando um Jogo da Forca com ReactJS
 
-## Version History
+## Versão
 
 - 1.0.0
 

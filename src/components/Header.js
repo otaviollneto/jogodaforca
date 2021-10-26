@@ -6,15 +6,15 @@ const Header = () => {
   const HandleButton = () => {
     Swal.fire({
       icon: "warning",
-      title: "Peraturan",
-      text: "Anda harus menebak kata dengan benar!",
+      title: "Regulamento",
+      text: "Digite uma letra de adivinhe a palavra corretamente",
       confirmButtonColor: "#2563EB",
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
           icon: "info",
-          title: "Informasi",
-          text: "Terdapat 45 kata baku yang diacak",
+          title: "Informações",
+          text: "Existem 29 palavras que são embaralhadas",
           confirmButtonColor: "#2563EB",
         });
       }
@@ -25,6 +25,7 @@ const Header = () => {
     <>
       <h1>React Jogo da Forca</h1>
       <p>Descubra a palavra secreta!</p>
+      <p>Digite uma letra</p>
       <button onClick={HandleButton}>Regras</button>
     </>
   );
