@@ -1,18 +1,10 @@
-# nuflakbrr-hangman.vercel.app
+# Jogo da Forca
 
-Create React Hangman Games App.
-
-## Authors
-
-Contributors names and contact info
-
-Naufal Akbar Nugroho  
-[@kbrnugroho](https://instagram.com/kbrnugroho)
+Criando um Jogo da Forca com ReactJS
 
 ## Version History
 
 - 1.0.0
-  - [Initial Release](CHANGELOG.md)
 
 ## License
 

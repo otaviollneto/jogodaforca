@@ -9,53 +9,40 @@ import { showNotification as show } from "./helpers/Helpers";
 import "./styles/App.css";
 
 const words = [
-  "abjad",
-  "akhirat",
-  "aksesori",
-  "aktif",
-  "akuarium",
-  "aluminium",
-  "ambulans",
-  "analisis",
-  "antena",
-  "antre",
-  "anugerah",
-  "azan",
-  "afdal",
-  "agamais",
-  "ajek",
-  "adjektif",
-  "aktual",
-  "balsam",
-  "batalion",
-  "baterai",
-  "barzakh",
-  "bazar",
-  "besok",
-  "bosan",
-  "bus",
-  "cabai",
-  "capai",
-  "cedera",
-  "cendekiawan",
-  "cengkih",
-  "cinderamata",
-  "cokelat",
-  "daftar",
-  "derajat",
-  "desain",
-  "detail",
-  "detergen",
-  "diagnosis",
-  "efektif",
-  "efektivitas",
-  "ekosistem",
-  "ekspor",
-  "ekstra",
-  "ekstrem",
-  "elite",
+  "Afobado",
+  "Amendoim",
+  "Banheiro",
+  "Caatinga",
+  "Cachorro",
+  "Campeonato",
+  "Capricórnio",
+  "Catapora",
+  "Corrupção",
+  "Crepúsculo",
+  "Empenhado",
+  "Esparadrapo",
+  "Forca",
+  "Galáxia",
+  "História",
+  "Magenta",
+  "Manjericão",
+  "Menta",
+  "Moeda",
+  "Oração",
+  "Paçoca",
+  "Palavra",
+  "Pedreiro",
+  "Pneumonia",
+  "Pulmão",
+  "Rotatória",
+  "Serenata",
+  "Transeunte",
+  "Trilogia",
+  "Xícara",
 ];
-let selectedWord = words[Math.floor(Math.random() * words.length)];
+
+let selectedWord =
+  words[Math.floor(Math.random() * words.length)].toLowerCase();
 
 function App() {
   const [playable, setPlayable] = useState(true);
@@ -107,7 +94,13 @@ function App() {
         <WrongLetters wrongLetters={wrongLetters} />
         <Word selectedWord={selectedWord} correctLetters={correctLetters} />
       </div>
-      <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain} />
+      <Popup
+        correctLetters={correctLetters}
+        wrongLetters={wrongLetters}
+        selectedWord={selectedWord}
+        setPlayable={setPlayable}
+        playAgain={playAgain}
+      />
       <Notification showNotification={showNotification} />
     </>
   );
